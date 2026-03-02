@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyurtma</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <section class="main">
+            <section class="shopping">
+                <div class="back"><span><a href="https://www.google.com/?hl=RU"><button><span>←</span></button></a> Shopping Continue</span></div>
+                <div class="linee"></div>
+                <div><span>Shopping cart</span></div>
+                <div class="amount"><span>You have<input class="narsa" id="narsa" placeholder="0" type="text" readonly>items in your cart</span></div>
+                <div class="items">
+                    <div class="item"><img src="rasm 1.svg" alt="">
+                        <div class="infos"><span>Italy Pizza</span><h5>Extra cheese and toping</h5></div>
+                        <div class="count"><input class="miqdor" type="number" placeholder="0" id="quantity"> 
+                            <input class="natija" type="text" placeholder="0$" id="result" readonly>
+                        </div>
+                        <div class="trash">
+                            <button id="clear">
+                                <img class="img" src="trash.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="item"><img src="rasm 2.svg" alt="">
+                        <div class="infos"><span>Combo Plate</span><h5>Extra cheese and toping</h5></div>
+                        <div class="count"><input class="miqdor" type="number" placeholder="0" id="quantityi"> 
+                            <input class="natija" type="text" placeholder="0$" id="resulti" readonly>
+                        </div>
+                        <div class="trash">
+                            <button id="clearr">
+                                <img class="img" src="trash.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="item"><img src="rasm 3.svg" alt="">
+                        <div class="infos"><span>Spanish Rice</span><h5>Extra cheese and toping</h5></div>
+                        <div class="count"><input class="miqdor" type="number" placeholder="0" id="quantityii"> 
+                            <input class="natija" type="text" placeholder="0$" id="resultii" readonly>
+                        </div>
+                        <div class="trash">
+                            <button id="clearrr">
+                                <img class="img" src="trash.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Card section -->
+            <section class="card-detals">
+                <section class="all-in">
+                    <div class="up">
+                        <span>Card Details</span>
+                        <img src="Card Details.jpg" alt="">
+                    </div>
+                    <div class="little-text">
+                        <span>Card type</span>
+                    </div>
+                    <div class="card">
+                        <button class="img"><img src="Master card.svg" alt=""></button>
+                        <button class="img"><img src="Visa.svg" alt=""></button>
+                        <button class="img"><img src="Rupay.svg" alt=""></button>
+                        <button class="img"><img src="See all.svg" alt=""><span>See all</span></button>
+                    </div>
+                    <div class="little-text">
+                        <span>Name on card</span>
+                    </div>
+                    <div class="name">
+                        <input type="text" id="owner"  placeholder="Name">
+                    </div>
+                    <div class="little-text">
+                        <span>Card Number</span>
+                    </div>
+                    <div class="name">
+                        <input type="text" id="card" placeholder="1111 2222 3333 4444" maxlength="19">
+                    </div>
+                    <div class="two">
+                        <div class="two-in">
+                            <div class="little-text">
+                            <span>Expiration date</span>
+                        </div>
+                        <div><input type="text" id="expiry" placeholder="MM/YY" maxlength="5" inputmode="numeric"></div>
+                        </div>
+                       <div class="two-in">
+                         <div class="little-text">
+                            <span>CVV</span>
+                        </div>
+                        <div><input type="text" id="three" placeholder="123" maxlength="3"></div>
+                       </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="check"><span>Subtotal</span><input class="subtotal" type="text" id="subtotal" placeholder="0$" readonly></div>
+                    <div class="check"><span>Shipping</span><input class="shipping" type="text" id="shipping" placeholder="0$" readonly></div>
+                    <div class="check"><span>Total (Tax incl.)</span><input class="total" type="text" id="total" placeholder="0$" readonly></div>
+                    <div class="checkout"><input type="text" id="checkout" placeholder="0$" readonly><span>Checkout →</span></div>
+                </section>
+            </section>
+        </section>
+        <script src="index.js"></script>
+    </body>
+</body>
+</html>

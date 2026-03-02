@@ -1,0 +1,423 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    background-color: rgb(115, 154, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    height: 630px;
+    width: 900px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+/* SHOPPING */
+.shopping{
+    width: 520px;
+    margin-left: 55px;
+}
+.shopping span{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.back button{
+    background-color: white;
+    outline: none;
+    border: none;
+}
+.linee{
+    width: 465px;
+    height: 2px;
+    border-radius: 5px;
+    background-color: rgba(208, 207, 207, 1);
+    margin: 18px 0px 18px;
+}
+.amount{
+    margin-bottom: 30px;
+}
+.amount span{
+    font-size: 12px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+}
+.amount .narsa{
+    width: 22px;
+    color: black;
+    text-align: right;
+    outline: none;
+    border: none;
+
+}
+ input::placeholder{
+    color: black;
+}
+.item{
+    width: 465px;
+    height: 90px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.item span{
+    font-family: 'Poppins', sans-serif;
+}
+.item h5{
+    margin-top: 8px;
+}
+.item img{
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+}
+.item input {
+    text-align: right;
+}
+.item .trash button{
+    height: 30px;
+    width: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+.item .trash img{
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+}
+.infos{
+    margin-right: 15px;
+}
+h5{
+    margin: 0px;
+}
+.count input{
+    width: 50px;
+    height: 20px;
+    outline: none;
+    border: none;
+    margin-right: 25px;
+}
+.count .miqdor{
+    width: 30px;
+    border: none;
+}
+.count .natija{
+    outline: none;
+    border: none;
+}
+/* CARD */
+.card-detals{
+    height: 575px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: rgba(86, 90, 187, 1);
+}
+.card-detals input::placeholder{
+    color: white;
+}
+.card-detals .all-in{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.card-detals .up{
+    display: flex;
+    justify-content: space-between;
+    gap: 85px;
+    align-items: center;
+    position: relative;
+    top: 20px;
+    margin-bottom: 30px;
+
+}
+.card-detals .up img{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card-detals .up span{
+    width: 110px;
+    color: rgba(254, 252, 252, 1);
+    font-size: 20px;
+}
+.little-text{
+    color: rgba(254, 252, 252, 1);
+    margin-bottom: 10px;
+}
+.card{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+.card button{
+    background-color: rgba(98, 104, 198, 1);
+    border-radius: 5px;
+    height: 45px;
+    width: 62px;
+    /* position: relative; */
+}
+.card button img{
+    border-radius: 5px;
+    height: 42px;
+    width: 67px;
+    position: relative;
+    top: -1px;
+    right: 10px;
+}
+.card span{
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    position: relative;
+    bottom: 34px;
+}
+.name input{
+    height: 35px;
+    width: 260px;
+    color: white;
+    padding-left: 10px;
+    border-radius: 5px;
+    background-color: rgba(98, 104, 198, 1);
+    border: none;
+    outline: none;
+    margin-bottom: 14px;
+}
+.two{
+    display: flex;
+    gap: 20px;
+}
+.two-in input{
+    height: 35px;
+    width: 120px;
+    color: white;
+    padding-left: 10px;
+    border-radius: 5px;
+    background-color: rgba(98, 104, 198, 1);
+    border: none;
+    outline: none;
+    margin-bottom: 14px;
+}
+.line{
+    width: 270px;
+    height: 2px;
+    border-radius: 5px;
+    background-color: rgba(95, 101, 195, 1);
+}
+.check{
+    display: flex;
+    justify-content: space-between;
+}
+.check span{
+    color: white;
+    margin-top: 8px;
+}
+.check input{
+    background-color: rgba(86, 90, 187, 1);
+}
+#subtotal[readonly] {
+    color: white;
+}
+#shipping[readonly] {
+    color: white;
+}
+#total[readonly] {
+    color: white;
+}
+#checkout[readonly]{
+    color: white;
+}
+.check .subtotal{
+    height: 26px;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: black;
+    text-align: right;
+}
+.check .shipping{
+    height: 26px;
+    width: 100px;
+    border: none;
+    outline: none;
+    text-align: right;
+}
+.check .total{
+    height: 26px;
+    width: 100px;
+    border: none;
+    outline: none;
+    text-align: right;
+}
+
+.checkout{
+    height: 40px;
+    width: 270px;
+    border-radius: 5px;
+    background-color: rgba(77, 225, 193, 1);
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    
+}
+.checkout input{
+    height: 26px;
+    width: 70px;
+    background-color: rgba(77, 225, 193, 1);
+    border: none;
+    outline: none;
+    text-align: center;
+}
+.checkout span{
+    color: white;
+    justify-content: space-between;
+}
+
+/* ===================================================== */
+
+@media (max-width: 770px) {
+
+    body {
+        align-items: flex-start;
+        padding: 20px 10px;
+    }
+
+    .main {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .shopping {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .linee {
+        width: 100%;
+    }
+
+    .item {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .item img {
+        width: 60px;
+        height: 60px;
+        flex-shrink: 0;
+    }
+
+    .count {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 8px;
+    }
+
+    .count input {
+        width: 80px;
+    }
+
+    .trash {
+        margin-left: auto;
+    }
+
+    .card-detals {
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .card-detals .up {
+        gap: 0;
+    }
+
+    .name input{
+        width: 100%;
+    }
+    .two-in input {
+        width: 100%;
+    }
+
+    .two {
+        flex-direction: column;
+    }
+
+    .line {
+        width: 100%;
+    }
+
+    .check {
+        gap: 10px;
+    }
+
+    .check input {
+        width: 90px;
+    }
+
+    .checkout {
+        width: 100%;
+        gap: 40px;
+    }
+
+    .checkout input {
+        width: 80px;
+    }
+}
+
+/* Kichik telefonlarga */
+
+@media (max-width: 480px) {
+
+    .shopping span {
+        font-size: 16px;
+    }
+
+    .item span {
+        font-size: 14px;
+    }
+
+    .item h5 {
+        font-size: 12px;
+    }
+
+    .card-detals .up span {
+        font-size: 18px;
+    }
+
+    .checkout {
+        flex-direction: column;
+        gap: 5px;
+        height: auto;
+        padding: 10px 0;
+    }
+}
